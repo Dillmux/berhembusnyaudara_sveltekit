@@ -16,7 +16,7 @@
 				<p
 					class="px-6 h-full w-2/5 flex items-center justify-center text-brand-light text-center text-xs md:text-lg lg:text-4xl font-antonio font-bold uppercase border border-brand-light"
 				>
-					berhembusnyaudara<br class="md:hidden" />.my.id
+					berhembusnyaudara<br class="md:hidden" />.web.id
 				</p>
 			</div>
 		</div>
