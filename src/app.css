@@ -1,0 +1,110 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Montserrat:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800;&display=swap'); */
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'Antonio';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('$lib/assets/fonts/antonio/Antonio-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Antonio';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('$lib/assets/fonts/antonio/Antonio-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 200;
+	font-display: swap;
+	src: url('$lib/assets/fonts/montserrat/Montserrat-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: 200;
+	font-display: swap;
+	src: url('$lib/assets/fonts/montserrat/Montserrat-ExtraLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('$lib/assets/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url('$lib/assets/fonts/montserrat/Montserrat-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('$lib/assets/fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: 600;
+	font-display: swap;
+	src: url('$lib/assets/fonts/montserrat/Montserrat-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url('$lib/assets/fonts/montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: 800;
+	font-display: swap;
+	src: url('$lib/assets/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@theme {
+	--color-brand-black: #170f07;
+	--color-brand-red: #78060a;
+	--color-brand-dark: #513218;
+	--color-brand-semi: #975d27;
+	--color-brand-light: #de9949;
+
+	--font-antonio: 'Antonio', sans-serif;
+	--font-montserrat: 'Montserrat', sans-serif;
+}
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		@apply font-montserrat bg-brand-black text-stone-200 overflow-x-hidden;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-antonio;
+	}
+}
